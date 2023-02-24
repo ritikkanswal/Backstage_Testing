@@ -1,5 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
 metadata:
+  name: JIRA
+  description: |
+    Backstage is an open-source developer portal that puts the developer experience first.
+  links:
+    - title: Website
+      url: http://backstage.io
+    - title: Documentation
+      url: https://backstage.io/docs
+    - title: Storybook
+      url: https://backstage.io/storybook
+    - title: Discord Chat
+      url: https://discord.com/invite/EBHEGzX
   annotations:
     jira/project-key: <example-jira-project-key>
     jira/component: <example-component> # optional, you might skip this value to fetch data for all components
     jira/token-type: Bearer # optional, used for Activity stream feed. If you are using Basic auth you can skip this.
+    github.com/project-slug: backstage/backstage
+    backstage.io/techdocs-ref: dir:.
+    lighthouse.com/website-url: https://backstage.io
+spec:
+  type: library
+  owner: CNCF
+  lifecycle: experimental
+
